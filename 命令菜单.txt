@@ -1,0 +1,67 @@
+customserver.gettoken
+
+ --List of all multiplayer command and their current values:
+ServerName:
+WelcomeMessage:
+GamePassword:
+AdminPassword:
+GameDefinitionId: 0
+AllowPollsToKickPlayers: False
+AllowPollsToBanPlayers: False
+AllowPollsToChangeMaps: False
+AllowIndividualBanners: False
+UseRealisticBlocking: False
+PremadeMatchGameMode: Skirmish
+GameType: FreeForAll
+PremadeGameType: 0
+Map: mp_duel_001
+CultureTeam1: sturgia
+CultureTeam2: khuzait
+MaxNumberOfPlayers: 120
+MinNumberOfPlayersForMatchStart: 1
+NumberOfBotsTeam1: 0
+NumberOfBotsTeam2: 0
+NumberOfBotsPerFormation: 0
+FriendlyFireDamageMeleeSelfPercent: 0
+FriendlyFireDamageMeleeFriendPercent: 0
+FriendlyFireDamageRangedSelfPercent: 0
+FriendlyFireDamageRangedFriendPercent: 0
+SpectatorCamera: 0
+WarmupTimeLimit: 5
+MapTimeLimit: 30
+RoundTimeLimit: 120
+RoundPreparationTimeLimit: 10
+RoundTotal: 1
+RespawnPeriodTeam1: 3
+RespawnPeriodTeam2: 3
+UnlimitedGold: False
+GoldGainChangePercentageTeam1: 0
+GoldGainChangePercentageTeam2: 0
+MinScoreToWinMatch: 120000
+MinScoreToWinDuel: 0
+PollAcceptThreshold: 0
+AutoTeamBalanceThreshold: 0
+EnableAntiCheat: False
+EnableMissionRecording: False
+SingleSpawn: False
+
+ --List of additional commands:
+list
+set_winner_team
+stats
+open_monitor
+crash_game
+start_game_and_mission
+end_game_after_mission_is_over
+set_port
+start_game
+start_mission
+end_mission
+say
+enable_automated_battle_switching
+add_map_to_automated_battle_pool
+enable_map_voting
+disable_map_voting
+enable_culture_voting
+disable_culture_voting
+set_automated_battle_count

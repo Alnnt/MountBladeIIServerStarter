@@ -1,0 +1,23 @@
+﻿ServerName CN - 风车谷测试服务器 Q群93703718
+WelcomeMessage 欢迎来到风车谷服务器，本社区官方群：93703718，官网：mb.wm-valley.com
+AdminPassword 123456
+set_port 7640
+GameType TeamDeathmatch
+add_map_to_automated_battle_pool mp_tdm_map_004a
+add_map_to_automated_battle_pool mp_tdm_map_003
+add_map_to_automated_battle_pool mp_tdm_map_001_spring
+AllowPollsToKickPlayers False
+AllowPollsToBanPlayers False
+AllowPollsToChangeMaps False
+MapTimeLimit 30
+FriendlyFireDamageMeleeFriendPercent 75
+FriendlyFireDamageMeleeSelfPercent 0
+FriendlyFireDamageRangedFriendPercent 100
+FriendlyFireDamageRangedSelfPercent 0
+RespawnPeriodTeam1 5
+RespawnPeriodTeam1 5
+MinNumberOfPlayersForMatchStart 0
+MaxNumberOfPlayers 100
+start_game
+enable_automated_battle_switching
+start_mission
