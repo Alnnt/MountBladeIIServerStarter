@@ -1,9 +1,9 @@
 @echo off
-title 欢迎使用风车谷砍二服务器自动部署工具
+title Welcome to use Windmill Valley Server Deploy Tools
 echo =====================================
-echo             登入steam账户
+echo        Login in Steam account
 echo =====================================
-
+::Get your tokens by using the first line commands in "CommondsLines.txt",type it in game's console.
 for /f "tokens=2,*" %%i in ('reg query "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders" /v "Personal"') do (
 set documents=%%j
 )
@@ -12,8 +12,8 @@ md "%file%"
 set /p Tokens=Tokens: 
 >"%file%\DedicatedCustomServerAuthToken.txt" set /p="%Tokens%" <nul
 
-set /p username=请输入账号: 
-set "psCommand=powershell -Command "$pword = read-host '请输入密码' -AsSecureString ; ^
+set /p username=Account: 
+set "psCommand=powershell -Command "$pword = read-host 'Password' -AsSecureString ; ^
       $BSTR=[System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($pword); ^
           [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($BSTR)""
 for /f "usebackq delims=" %%p in (`%psCommand%`) do set password=%%p
