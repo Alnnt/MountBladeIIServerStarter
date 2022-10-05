@@ -1,13 +1,14 @@
 @echo off
+::Here type in your config's name, it shouldn't includde ".txt"
 set cfg=wm_sample
 echo DedicatedCustomserver.starter.exe /dedicatedcustomserverconfigfile %cfg%.txt
-title 骑砍二风车谷一键开服端 Q群93703718  配置：%cfg%
+title MB2 Windmill Valley Server Starter  Config：%cfg%
 :restart
 DedicatedCustomserver.starter.exe /dedicatedcustomserverconfigfile %cfg%.txt
-echo 服务器异常崩溃，重启倒计时: 3s
+echo Server closed by error, wait to restart: 3s
 ping -n 2 -w 500 0.0.0.1>nul
-echo 服务器异常崩溃，重启倒计时: 2s
+echo Server closed by error, wait to restart: 2s
 ping -n 2 -w 500 0.0.0.1>nul
-echo 服务器异常崩溃，重启倒计时: 1s
+echo Server closed by error, wait to restart: 1s
 ping -n 2 -w 500 0.0.0.1>nul
 goto restart
