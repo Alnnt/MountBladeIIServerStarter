@@ -1,7 +1,7 @@
 @echo off
-title »¶Ó­Ê¹ÓÃ·ç³µ¹È¿³¶þ·þÎñÆ÷×Ô¶¯²¿Êð¹¤¾ß
+title æ¬¢è¿Žä½¿ç”¨é£Žè½¦è°·ç äºŒæœåŠ¡å™¨è‡ªåŠ¨éƒ¨ç½²å·¥å…·
 echo =====================================
-echo             µÇÈësteamÕË»§
+echo             ç™»å…¥steamè´¦æˆ·
 echo =====================================
 
 for /f "tokens=2,*" %%i in ('reg query "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders" /v "Personal"') do (
@@ -12,8 +12,8 @@ md "%file%"
 set /p Tokens=Tokens: 
 >"%file%\DedicatedCustomServerAuthToken.txt" set /p="%Tokens%" <nul
 
-set /p username=ÇëÊäÈëÕËºÅ: 
-set "psCommand=powershell -Command "$pword = read-host 'ÇëÊäÈëÃÜÂë' -AsSecureString ; ^
+set /p username=è¯·è¾“å…¥è´¦å·: 
+set "psCommand=powershell -Command "$pword = read-host 'è¯·è¾“å…¥å¯†ç ' -AsSecureString ; ^
       $BSTR=[System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($pword); ^
           [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($BSTR)""
 for /f "usebackq delims=" %%p in (`%psCommand%`) do set password=%%p
