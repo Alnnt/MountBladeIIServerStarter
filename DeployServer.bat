@@ -1,13 +1,13 @@
 @echo off
 set cfg=wm_sample
 echo DedicatedCustomserver.starter.exe /dedicatedcustomserverconfigfile %cfg%.txt
-title Æï¿³¶þ·ç³µ¹ÈÒ»¼ü¿ª·þ¶Ë QÈº93703718  ÅäÖÃ£º%cfg%
+title éª‘ç äºŒé£Žè½¦è°·ä¸€é”®å¼€æœç«¯ Qç¾¤93703718  é…ç½®ï¼š%cfg%
 :restart
 DedicatedCustomserver.starter.exe /dedicatedcustomserverconfigfile %cfg%.txt
-echo ·þÎñÆ÷Òì³£±ÀÀ££¬ÖØÆôµ¹¼ÆÊ±: 3s
+echo æœåŠ¡å™¨å¼‚å¸¸å´©æºƒï¼Œé‡å¯å€’è®¡æ—¶: 3s
 ping -n 2 -w 500 0.0.0.1>nul
-echo ·þÎñÆ÷Òì³£±ÀÀ££¬ÖØÆôµ¹¼ÆÊ±: 2s
+echo æœåŠ¡å™¨å¼‚å¸¸å´©æºƒï¼Œé‡å¯å€’è®¡æ—¶: 2s
 ping -n 2 -w 500 0.0.0.1>nul
-echo ·þÎñÆ÷Òì³£±ÀÀ££¬ÖØÆôµ¹¼ÆÊ±: 1s
+echo æœåŠ¡å™¨å¼‚å¸¸å´©æºƒï¼Œé‡å¯å€’è®¡æ—¶: 1s
 ping -n 2 -w 500 0.0.0.1>nul
 goto restart
